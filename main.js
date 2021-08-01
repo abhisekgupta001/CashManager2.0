@@ -36,7 +36,7 @@ btnNext.addEventListener("click",()=>{
 
 btnCheck.addEventListener("click",()=>{
     hideErrorMessage();
-    if(cashReceived >= billAmount)
+    if(cashReceived >= billAmount && billAmount > 0)
     {
         const amountToBeReturned = cashReceived - billAmount;
         calculate(amountToBeReturned);
